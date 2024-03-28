@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <title>User Details</title>
+</head>
+<body>
+  <h1>User Details</h1>
+  <p>Name: <span id="displayName"></span></p>
+  <p>Age: <span id="displayAge"></span></p>
+  <p>Gender: <span id="displayGender"></span></p>
+  <p>Email: <span id="displayEmail"></span></p>
+  <p>Date of Birth: <span id="displayDob"></span></p>
+
+  <script>
+    document.getElementById("displayName").innerText = localStorage.getItem("name");
+    document.getElementById("displayAge").innerText = localStorage.getItem("age");
+    document.getElementById("displayGender").innerText = localStorage.getItem("gender");
+    document.getElementById("displayEmail").innerText = localStorage.getItem("email");
+    document.getElementById("displayDob").innerText = localStorage.getItem("dob");
+  </script>
+</body>
+</html>
+
